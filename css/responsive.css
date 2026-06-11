@@ -1,0 +1,386 @@
+﻿/* desktop responsive */
+
+@media (min-width: 768px) {
+  /* header */
+
+  .site-header {
+    padding: 1rem 3.5rem;
+  }
+
+  .mobile-logo img {
+    width: 128px;
+  }
+
+  .mobile_burger {
+    display: none;
+  }
+
+  .nav_menu {
+    width: auto;
+    max-height: none;
+    padding: 0;
+    display: flex;
+    position: static;
+    overflow: visible;
+    overscroll-behavior: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav_menu a,
+  .dropdown_wrapper > summary {
+    min-height: 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .dropdown_wrapper > summary {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .dropdown_wrapper > summary::after {
+    position: absolute;
+    left: 50%;
+    bottom: -0.75rem;
+    margin-top: 0;
+    transform: translateX(-50%);
+  }
+
+  .dropdown_list {
+    min-width: 18rem;
+    margin-top: 0.75rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1001;
+  }
+}
+
+/* nye responsives */
+
+/* desktop forside */
+
+@media (min-width: 900px) {
+  .hero-section {
+    min-height: 100svh;
+    padding: 7rem 3.5rem 6rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 480px);
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .left-text h1 {
+    max-width: none;
+    font-size: 3.1rem;
+    white-space: nowrap;
+  }
+
+  .left-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .left-text p {
+    max-width: 36rem;
+    font-size: 1.1rem;
+    margin-top: 4rem;
+  }
+
+  .right-img {
+    justify-self: end;
+    max-width: 480px;
+  }
+}
+
+/* desktop temaoversigt */
+
+@media (min-width: 900px) {
+  .theme_section {
+    padding: 5rem 3.5rem 10rem;
+  }
+
+  .grid_1-1 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  .wrapper-frontpage > section.frontpage_theme_btns .grid_1-1 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .theme_card {
+    min-height: 360px;
+  }
+
+  .wrapper-frontpage > section.frontpage_theme_btns .theme_card {
+    min-height: auto;
+  }
+
+  body > footer {
+    padding-inline: 3.5rem;
+  }
+}
+
+/* 2/6 hero design */
+@media (min-width: 900px) {
+  .hero-section {
+    min-height: 760px;
+    padding: 7rem 4.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-position: center;
+  }
+
+  .left-text {
+    max-width: 38rem;
+  }
+
+  .left-text h1 {
+    max-width: none;
+    font-size: 3.1rem;
+    white-space: nowrap;
+  }
+
+  .left-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .left-text p {
+    max-width: 36rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .cta-mainpage {
+    margin-top: 4rem;
+  }
+
+  .left-text > img {
+    width: 150px;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* desktop hero background image override */
+
+@media (min-width: 900px) {
+  .hero-section {
+    min-height: 760px;
+    padding: 7rem 4.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .left-text {
+    max-width: 38rem;
+  }
+
+  .left-text p {
+    max-width: 36rem;
+  }
+}
+
+/* hero section viewport fill */
+@supports not (height: 100svh) {
+  .hero-section {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 760px) {
+  .hero-section {
+    min-height: calc(100svh - 130px + 1.5rem);
+    padding-top: 2.5rem;
+    padding-bottom: 3.25rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .left-text h1 {
+    font-size: clamp(1.55rem, 5.7vw, 1.95rem);
+    white-space: nowrap;
+  }
+
+  .left-text h2 {
+    font-size: clamp(1.05rem, 4.2vw, 1.35rem);
+  }
+
+  .left-text p {
+    font-size: clamp(0.9rem, 3.55vw, 1rem);
+    margin-top: 1.35rem;
+    line-height: 1.16;
+  }
+
+  .left-text > img {
+    width: 82px;
+    margin-top: 1.55rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .cta-mainpage {
+    margin-top: 0;
+    gap: 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn_third {
+    min-width: 132px;
+    padding: 0.9rem 1.25rem;
+  }
+}
+
+/* PORTFOLIO RESPONSIVE */
+/* desktop portfolio page */
+
+@media (min-width: 900px) {
+  .wrapper-portfolio {
+    padding: 0 3.5rem 22rem;
+  }
+
+  .portfolio_text {
+    max-width: 100%;
+  }
+
+  .portfolio_text h1 {
+    font-size: 3rem;
+  }
+
+  .portfolio_text h2 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio_text p {
+    max-width: 35rem;
+    font-size: 1.05rem;
+  }
+
+  /*  */
+
+  /* about / portfolio hero */
+
+  .portfolio_hero {
+    min-height: calc(100svh - 7rem);
+    padding: 7rem 0 6rem;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .portfolio_hero:has(> .right-img) {
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 26rem);
+  }
+
+  .portfolio_hero > .right-img {
+    justify-self: end;
+  }
+  /*  */
+
+  /* about btns */
+
+  .portfolio_hero .buttons_group {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4.5rem;
+  }
+
+  .portfolio_hero .portfolio_btn {
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    min-width: 5.75rem;
+    min-height: 0;
+    inline-size: auto;
+    block-size: auto;
+    min-inline-size: 5.75rem;
+    min-block-size: 0;
+    padding: 0.8rem 1.1rem;
+    text-align: center;
+    line-height: normal;
+    white-space: normal;
+  }
+
+  .Tema_oversigt {
+    margin-top: clamp(5rem, 8vw, 8rem);
+  }
+
+  .line {
+    margin: 8rem 0 5rem;
+  }
+
+  /* tema oversigt i portfolio.html... tilpasset til prototype grid */
+
+  .Tema_oversigt > .portfolio_content {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    column-gap: 2rem;
+    row-gap: 2.5rem;
+    align-items: start;
+    padding-bottom: 0;
+  }
+
+  .Tema_oversigt > .portfolio_content + .portfolio_content {
+    margin-top: clamp(7rem, 10vw, 11rem);
+  }
+
+  .Tema_oversigt > .portfolio_content > .preview_div {
+    width: 100%;
+    max-width: none;
+  }
+
+  .Tema_oversigt > .portfolio_content iframe {
+    min-height: 18rem;
+  }
+
+  /* theme info layout correction*/
+
+  .Tema_oversigt > .portfolio_content > .theme_info {
+    align-self: start;
+    min-height: calc(100svh - 8rem);
+  }
+
+  .Tema_oversigt > .portfolio_content > .theme_info + div:has(> img) {
+    min-height: calc(100svh - 8rem);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  /* slettet */
+
+  /* about.html skal stadig stacke som cards og ikke bruge portfolio grid */
+  section.Tema_oversigt .portfolio_content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-section > .right-img {
+    display: block;
+  }
+
+  .hero-section > .right-img .hero-img {
+    animation: none;
+  }
+}
+

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="404-side for Awaab Maalins portfolio med link tilbage til forsiden og portfolio-siden.">
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <meta name="theme-color" content="#151f33">
+
+    <title>404 | Portfolio</title>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="navdiv">
+        <nav class="general-nav" aria-label="Primær navigation">
+          <div class="general-bar">
+            <a href="index.html" class="mobile-logo">
+              <img src="img/logo/final%20logo.png" width="128" height="129" alt="Awaab Maalin logo">
+            </a>
+
+            <button class="mobile_burger" id="mobileBurger" type="button" aria-label="Åbn menu" aria-controls="burgermenu" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <ul class="nav_menu" id="burgermenu">
+              <li><a href="about.html">Om mig</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li>
+                <details class="dropdown_wrapper">
+                  <summary>Tema oversigt</summary>
+
+                  <ul class="dropdown_list">
+                    <li><a href="portfolio.html#tema1">Tema 1: Video og GitHub</a></li>
+                    <li><a href="portfolio.html#tema2">Tema 2: Grundlæggende web</a></li>
+                    <li><a href="portfolio.html#tema3">Tema 3: Grundlæggende UX/UI</a></li>
+                    <li><a href="portfolio.html#tema4">Tema 4: Brugergrænsefladeudvikling</a></li>
+                    <li><a href="portfolio.html#tema5">Tema 5: Grundlæggende indhold</a></li>
+                    <li><a href="portfolio.html#tema6">Tema 6: Portfolioeksamen</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrapper-portfolio">
+      <section class="portfolio_hero">
+        <div class="portfolio_text">
+          <h1>404</h1>
+          <h2>Siden findes ikke</h2>
+
+          <p>Den side, du prøver at åbne, findes ikke eller er blevet flyttet. Du kan gå tilbage til forsiden eller åbne portfolio-siden.</p>
+
+          <div class="buttons_group">
+            <a class="btn-primary" href="index.html">Til forsiden</a>
+            <a class="btn-secondary" href="portfolio.html">Se portfolio</a>
+          </div>
+        </div>
+
+        <div class="right-img">
+          <img class="hero-img" src="img/codespace.webp" width="1600" height="1067" alt="Abstrakt billede af kode i blå og lilla farver">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Portfolio: 1. semester Multimediedesign</p>
+      <p>MMD 1, Københavns Erhvervs Akademi</p>
+      <p>&#169; Awaab 2026</p>
+
+      <nav aria-label="Footer navigation">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">Om mig</a>
+      </nav>
+    </footer>
+
+    <script src="js/burger.js" defer></script>
+    <script src="js/dropdown.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+    <script src="js/scrollbtn.js" defer></script>
+  </body>
+</html>

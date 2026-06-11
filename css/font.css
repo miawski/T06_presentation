@@ -1,0 +1,43 @@
+/* FONT INDSTILLINGER */
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_opsz,wght.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Italic-VariableFont_opsz,wght.woff") format("woff");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Make form/button text inherit the same font */
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* Optional: clear typography weights for the portfolio */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 800;
+}
+
+p,
+a,
+li {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+}

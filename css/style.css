@@ -1,0 +1,71 @@
+/* portfolio iframe forhåndsvisninger */
+
+.portfolio_content figure {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.portfolio_content iframe {
+  width: 100%;
+  max-width: 100%;
+  pointer-events: none;
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+  transform-origin: left center;
+}
+
+/* portfolio iframe hint tekst */
+
+.portfolio_content figure::after {
+  content: "klik på preview og interagere";
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  z-index: 2;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(222, 196, 255, 0.45);
+  border-radius: 999px;
+  background-color: rgba(21, 31, 51, 0.82);
+  color: var(--white);
+  font-size: 0.85rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 0);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.portfolio_content figure:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -0.4rem);
+}
+
+.portfolio_content figure.is_preview_active::after {
+  opacity: 0;
+}
+
+/* portfolio iframe aktiv tilstand */
+
+.portfolio_content figure.is_preview_active {
+  z-index: 10;
+}
+
+.portfolio_content figure.is_preview_active iframe {
+  pointer-events: auto;
+  transform: scale(1.06);
+  box-shadow: 0 1rem 2rem rgba(222, 196, 255, 0.18);
+}
+
+/* tema beskrivelse nav styling */
+.dropdown_wrapper > summary.portfolio_btn {
+  color: var(--white);
+}
+
+.dropdown_wrapper > summary.portfolio_btn:hover,
+.dropdown_wrapper > summary.portfolio_btn:focus-visible,
+.dropdown_wrapper > summary.portfolio_btn:active {
+  color: var(--black);
+}
