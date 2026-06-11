@@ -25,6 +25,43 @@ html {
   font-family: "Inter", Arial, sans-serif;
 }
 
+/* custom purplish scrollbar */
+html,
+body,
+.nav_menu {
+  scrollbar-width: thin;
+  scrollbar-color: #dec4ff rgba(21, 31, 51, 0.95);
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.nav_menu::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+.nav_menu::-webkit-scrollbar-track {
+  background: rgba(21, 31, 51, 0.95);
+  border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.nav_menu::-webkit-scrollbar-thumb {
+  min-height: 3rem;
+  border: 2px solid rgba(21, 31, 51, 0.95);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #dec4ff 0%, #9e7cff 52%, #662d91 100%);
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+.nav_menu::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #dec4ff 48%, #9e7cff 100%);
+}
+
 /* body */
 
 body {
